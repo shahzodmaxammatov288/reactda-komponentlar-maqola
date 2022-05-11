@@ -1,0 +1,70 @@
+React komponentlari va ularni modullarga ajratish va class komponentlari haqida.
+
+* Komponentlar har doim PascalCase usulida yoziladi. m-n: Header, Info, Footer
+* Komponentlar bir nechta bo'lsa, ularni components papkasi ichiga olishimiz kerak.
+
+Misol uchun App komponenti quyidagicha yaratamiz!
+
+Birinchi o'rinda react kutubxonasini import qilib chaqirib olamiz.
+
+import React from "react";
+
+const App = () => {
+  return (
+    <div>
+      ...
+    </div>
+  );
+};
+
+export default App;
+
+Class komponentlari
+
+Komponent - o'zi mustaqil bo'lgan va qayta ishlatish mumkin bo'lgan kodlar majmuasi.
+Web sahifaning bir bo'lagi komponenta hisoblanadi.
+
+React jsda kompnonentlar 2 xil:
+
+1) Class komponentlari
+2) Funksional kompnonentlari
+
+Reactda klass komponent yaratishimizda Reactni Component klassidan meros olishimiz kerak:
+
+1-usul
+
+import React from "react";
+class App extends React.Component {
+  render() {
+    ...
+  }
+}
+export default App;
+
+2-usul
+
+import { Component } from "react";
+class App extends Component {
+  render() {
+    ...
+  }
+}
+
+3-usul  
+
+import React, { Component } from "react";
+class App extends Component {
+  render() {
+    ...
+  }
+}
+
+super(props) - Komponent klassi ichidagi metodlarni chaqirish uchun ishlatiladi.
+
+state = {} - Reactda biron bir komponentning xossalarini saqlash uchun ishlatiladi
+
+this.setState ({...}) - state = {...} ichidagi xossalarni o'zgartirish uchun shu metoddan foydalanamiz.
+
+E'tiboringiz uchun rahmat! 😉
+
+Shahzod Maxammatov 11.05.2022 
